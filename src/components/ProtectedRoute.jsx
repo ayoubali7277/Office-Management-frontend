@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 
 const getCurrentUser = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/auth/current-user",
+    "https://office-management-backend-production.up.railway.app/api/auth/current-user",
     {
       method: "GET",
       credentials: "include",

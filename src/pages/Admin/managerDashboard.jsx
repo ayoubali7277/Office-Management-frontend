@@ -40,7 +40,7 @@ function ManagerDashboard() {
     queryKey: ["manager-dashboard"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/dashboard",
+        "https://office-management-backend-production.up.railway.app/api/managers/dashboard",
         {
           credentials: "include",
         }
@@ -66,7 +66,7 @@ function ManagerDashboard() {
     queryKey: ["manager-payroll"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/payroll/manager",
+        "https://office-management-backend-production.up.railway.app/api/payroll/manager",
         {
           credentials: "include",
         }
@@ -112,7 +112,7 @@ function ManagerDashboard() {
     try {
       if (!notification.isRead) {
         const response = await fetch(
-          `http://localhost:3000/api/notifications/${notification.id}/read`,
+          `https://office-management-backend-production.up.railway.app/api/notifications/${notification.id}/read`,
           {
             method: "PATCH",
             credentials: "include",

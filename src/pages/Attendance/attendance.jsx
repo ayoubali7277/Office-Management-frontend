@@ -101,7 +101,7 @@ function Attendance() {
       }
 
       const response = await fetch(
-        `http://localhost:3000/api/attendance/admin?${params.toString()}`,
+        `https://office-management-backend-production.up.railway.app/api/attendance/admin?${params.toString()}`,
         {
           credentials: "include",
         }

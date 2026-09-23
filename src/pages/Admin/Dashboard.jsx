@@ -27,7 +27,7 @@ import { toast } from "react-hot-toast";
 
 const getDashboard = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/organization-admin/dashboard",
+    "https://office-management-backend-production.up.railway.app/api/organization-admin/dashboard",
     {
       method: "GET",
       credentials: "include",
@@ -47,7 +47,7 @@ const getDashboard = async () => {
 
 const getCurrentUser = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/auth/current-user",
+    "https://office-management-backend-production.up.railway.app/api/auth/current-user",
     {
       method: "GET",
       credentials: "include",
@@ -67,7 +67,7 @@ const getCurrentUser = async () => {
 
 const getNotifications = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/notifications",
+    "https://office-management-backend-production.up.railway.app/api/notifications",
     {
       method: "GET",
       credentials: "include",
@@ -87,7 +87,7 @@ const getNotifications = async () => {
 
 const markNotificationAsRead = async (notificationId) => {
   const response = await fetch(
-    `http://localhost:3000/api/notifications/${notificationId}/read`,
+    `https://office-management-backend-production.up.railway.app/api/notifications/${notificationId}/read`,
     {
       method: "PATCH",
       credentials: "include",

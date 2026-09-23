@@ -45,7 +45,7 @@ function ManagerTasks() {
     queryKey: ["manager-team"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/employees/manager-team",
+        "https://office-management-backend-production.up.railway.app/api/employees/manager-team",
         {
           credentials: "include",
         }
@@ -71,7 +71,7 @@ function ManagerTasks() {
     queryKey: ["manager-tasks"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/tasks/manager",
+        "https://office-management-backend-production.up.railway.app/api/tasks/manager",
         {
           credentials: "include",
         }
@@ -194,7 +194,7 @@ function ManagerTasks() {
 
     try {
       const response = await fetch(
-        "http://localhost:3000/api/tasks",
+        "https://office-management-backend-production.up.railway.app/api/tasks",
         {
           method: "POST",
           headers: {

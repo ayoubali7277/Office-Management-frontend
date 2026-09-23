@@ -63,7 +63,7 @@ function ManagerSettings() {
     queryKey: ["manager-profile"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/managers/settings/profile",
         {
           method: "GET",
           credentials: "include",
@@ -100,7 +100,7 @@ function ManagerSettings() {
   const profileMutation = useMutation({
     mutationFn: async (updatedProfile) => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/managers/settings/profile",
         {
           method: "PATCH",
           headers: {
@@ -145,7 +145,7 @@ function ManagerSettings() {
   const passwordMutation = useMutation({
     mutationFn: async (passwordDetails) => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/settings/password",
+        "https://office-management-backend-production.up.railway.app/api/managers/settings/password",
         {
           method: "PATCH",
           headers: {

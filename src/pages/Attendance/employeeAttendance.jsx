@@ -50,7 +50,7 @@ function EmployeeAttendance() {
     queryKey: ["employee-today-attendance"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/attendance/today",
+        "https://office-management-backend-production.up.railway.app/api/attendance/today",
         {
           credentials: "include",
         }
@@ -75,7 +75,7 @@ function EmployeeAttendance() {
     queryKey: ["employee-attendance-summary"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/attendance/summary",
+        "https://office-management-backend-production.up.railway.app/api/attendance/summary",
         {
           credentials: "include",
         }
@@ -110,7 +110,7 @@ function EmployeeAttendance() {
       params.append("status", selectedStatus);
 
       const response = await fetch(
-        `http://localhost:3000/api/attendance/records?${params.toString()}`,
+        `https://office-management-backend-production.up.railway.app/api/attendance/records?${params.toString()}`,
         {
           credentials: "include",
         }
@@ -131,7 +131,7 @@ function EmployeeAttendance() {
   const checkInMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/attendance/check-in",
+        "https://office-management-backend-production.up.railway.app/api/attendance/check-in",
         {
           method: "POST",
           credentials: "include",
@@ -173,7 +173,7 @@ function EmployeeAttendance() {
   const checkOutMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/attendance/check-out",
+        "https://office-management-backend-production.up.railway.app/api/attendance/check-out",
         {
           method: "PATCH",
           credentials: "include",

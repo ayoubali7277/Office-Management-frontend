@@ -32,7 +32,7 @@ function SuperAdminDashboard() {
 
   const fetchSuperAdmin = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/dashboard",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/dashboard",
       {
         method: "GET",
         credentials: "include",
@@ -60,7 +60,7 @@ function SuperAdminDashboard() {
 
   const fetchRecentOrganizations = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/organizations/recent",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/organizations/recent",
       {
         method: "GET",
         credentials: "include",
@@ -95,7 +95,7 @@ function SuperAdminDashboard() {
 
   const fetchNotifications = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/notifications",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/notifications",
       {
         method: "GET",
         credentials: "include",
@@ -113,7 +113,7 @@ function SuperAdminDashboard() {
 
   const markNotificationAsRead = async (notificationId) => {
     const response = await fetch(
-      `http://localhost:3000/api/super-admin/notifications/${notificationId}/read`,
+      `https://office-management-backend-production.up.railway.app/api/super-admin/notifications/${notificationId}/read`,
       {
         method: "PATCH",
         credentials: "include",
@@ -182,7 +182,7 @@ function SuperAdminDashboard() {
 
   const fetchRecentActivities = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/activities/recent",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/activities/recent",
       {
         method: "GET",
         credentials: "include",
@@ -211,7 +211,7 @@ function SuperAdminDashboard() {
 
   const logoutUser = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/auth/logout",
+      "https://office-management-backend-production.up.railway.app/api/auth/logout",
       {
         method: "POST",
         credentials: "include",

@@ -33,7 +33,7 @@ import AssignManager from "./AssignManager";
 
 const getDepartments = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/departments",
+    "https://office-management-backend-production.up.railway.app/api/departments",
     {
       method: "GET",
       credentials: "include",
@@ -53,7 +53,7 @@ const getDepartments = async () => {
 
 const getManagers = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/managers",
+    "https://office-management-backend-production.up.railway.app/api/managers",
     {
       method: "GET",
       credentials: "include",
@@ -73,7 +73,7 @@ const getManagers = async () => {
 
 const createDepartment = async (formData) => {
   const response = await fetch(
-    "http://localhost:3000/api/departments",
+    "https://office-management-backend-production.up.railway.app/api/departments",
     {
       method: "POST",
       headers: {
@@ -99,7 +99,7 @@ const createDepartment = async (formData) => {
 
 const updateDepartment = async (formData) => {
   const response = await fetch(
-    `http://localhost:3000/api/departments/${formData.id}`,
+    `https://office-management-backend-production.up.railway.app/api/departments/${formData.id}`,
     {
       method: "PATCH",
       headers: {
@@ -125,7 +125,7 @@ const updateDepartment = async (formData) => {
 
 const deleteDepartment = async (id) => {
   const response = await fetch(
-    `http://localhost:3000/api/departments/${id}`,
+    `https://office-management-backend-production.up.railway.app/api/departments/${id}`,
     {
       method: "DELETE",
       credentials: "include",
@@ -145,7 +145,7 @@ const deleteDepartment = async (id) => {
 
 const createManager = async (formData) => {
   const response = await fetch(
-    "http://localhost:3000/api/managers",
+    "https://office-management-backend-production.up.railway.app/api/managers",
     {
       method: "POST",
       headers: {
@@ -169,7 +169,7 @@ const createManager = async (formData) => {
 
 const updateManager = async (formData) => {
   const response = await fetch(
-    `http://localhost:3000/api/managers/${formData.id}`,
+    `https://office-management-backend-production.up.railway.app/api/managers/${formData.id}`,
     {
       method: "PATCH",
       headers: {
@@ -200,7 +200,7 @@ const assignManager = async ({
   departmentId,
 }) => {
   const response = await fetch(
-    `http://localhost:3000/api/managers/${managerId}`,
+    `https://office-management-backend-production.up.railway.app/api/managers/${managerId}`,
     {
       method: "PATCH",
       headers: {
@@ -226,7 +226,7 @@ const assignManager = async ({
 
 const deactivateManager = async (id) => {
   const response = await fetch(
-    `http://localhost:3000/api/managers/${id}/deactivate`,
+    `https://office-management-backend-production.up.railway.app/api/managers/${id}/deactivate`,
     {
       method: "PATCH",
       credentials: "include",
@@ -246,7 +246,7 @@ const deactivateManager = async (id) => {
 
 const activateManager = async (id) => {
   const response = await fetch(
-    `http://localhost:3000/api/managers/${id}/activate`,
+    `https://office-management-backend-production.up.railway.app/api/managers/${id}/activate`,
     {
       method: "PATCH",
       credentials: "include",

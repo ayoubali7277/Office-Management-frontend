@@ -35,7 +35,7 @@ function ManagerAttendance() {
 
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/attendance/manager?date=${selectedDate}`,
+        `https://office-management-backend-production.up.railway.app/api/attendance/manager?date=${selectedDate}`,
         {
           credentials: "include",
         }

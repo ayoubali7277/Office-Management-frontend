@@ -14,7 +14,7 @@ function Register() {
 
   const registerOrganization = async (formData) => {
     const response = await fetch(
-      "http://localhost:3000/api/organization-admin/register",{
+      "https://office-management-backend-production.up.railway.app/api/organization-admin/register",{
       method: "POST",
       headers : {
         "Content-Type" :"application/json",

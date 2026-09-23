@@ -21,7 +21,7 @@ import toast from "react-hot-toast";
 
 const getEmployeeDashboard = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/employees/dashboard",
+    "https://office-management-backend-production.up.railway.app/api/employees/dashboard",
     {
       method: "GET",
       credentials: "include",
@@ -76,7 +76,7 @@ function EmployeeDashboard() {
     try {
       if (!notification.isRead) {
         const response = await fetch(
-          `http://localhost:3000/api/notifications/${notification.id}/read`,
+          `https://office-management-backend-production.up.railway.app/api/notifications/${notification.id}/read`,
           {
             method: "PATCH",
             credentials: "include",

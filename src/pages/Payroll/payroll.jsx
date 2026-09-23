@@ -52,7 +52,7 @@ function Payroll() {
 
   const fetchPayroll = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/payroll/admin",
+      "https://office-management-backend-production.up.railway.app/api/payroll/admin",
       {
         credentials: "include",
       }
@@ -69,7 +69,7 @@ function Payroll() {
 
   const fetchSalaryMembers = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/payroll/salary-members",
+      "https://office-management-backend-production.up.railway.app/api/payroll/salary-members",
       {
         credentials: "include",
       }
@@ -110,7 +110,7 @@ function Payroll() {
   const updateEmployeeSalaryMutation = useMutation({
     mutationFn: async ({ id, salary }) => {
       const response = await fetch(
-        `http://localhost:3000/api/payroll/employee/${id}/salary`,
+        `https://office-management-backend-production.up.railway.app/api/payroll/employee/${id}/salary`,
         {
           method: "PATCH",
           credentials: "include",
@@ -147,7 +147,7 @@ function Payroll() {
   const updateManagerSalaryMutation = useMutation({
     mutationFn: async ({ id, salary }) => {
       const response = await fetch(
-        `http://localhost:3000/api/payroll/manager/${id}/salary`,
+        `https://office-management-backend-production.up.railway.app/api/payroll/manager/${id}/salary`,
         {
           method: "PATCH",
           credentials: "include",
@@ -184,7 +184,7 @@ function Payroll() {
   const createPayrollMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/payroll",
+        "https://office-management-backend-production.up.railway.app/api/payroll",
         {
           method: "POST",
           credentials: "include",
@@ -233,7 +233,7 @@ function Payroll() {
   const payPayrollMutation = useMutation({
     mutationFn: async (payrollId) => {
       const response = await fetch(
-        `http://localhost:3000/api/payroll/${payrollId}/pay`,
+        `https://office-management-backend-production.up.railway.app/api/payroll/${payrollId}/pay`,
         {
           method: "PATCH",
           credentials: "include",

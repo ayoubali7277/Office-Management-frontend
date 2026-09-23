@@ -36,7 +36,7 @@ function EmployeeTasks() {
     queryKey: ["employee-tasks"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/tasks/employee",
+        "https://office-management-backend-production.up.railway.app/api/tasks/employee",
         {
           credentials: "include",
         }
@@ -71,7 +71,7 @@ function EmployeeTasks() {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/tasks/${taskId}/status`,
+        `https://office-management-backend-production.up.railway.app/api/tasks/${taskId}/status`,
         {
           method: "PATCH",
           headers: {

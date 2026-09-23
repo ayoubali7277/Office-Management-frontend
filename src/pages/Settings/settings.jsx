@@ -51,7 +51,7 @@ function Settings() {
     queryKey: ["organizationSettings"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/organization-admin/settings/organization",
+        "https://office-management-backend-production.up.railway.app/api/organization-admin/settings/organization",
         {
           method: "GET",
           credentials: "include",
@@ -79,7 +79,7 @@ function Settings() {
     queryKey: ["adminProfile"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/organization-admin/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/organization-admin/settings/profile",
         {
           method: "GET",
           credentials: "include",
@@ -134,7 +134,7 @@ function Settings() {
   const updateOrganizationMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/organization-admin/settings/organization",
+        "https://office-management-backend-production.up.railway.app/api/organization-admin/settings/organization",
         {
           method: "PATCH",
           credentials: "include",
@@ -182,7 +182,7 @@ function Settings() {
   const updateProfileMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/organization-admin/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/organization-admin/settings/profile",
         {
           method: "PATCH",
           credentials: "include",
@@ -219,7 +219,7 @@ function Settings() {
   const updatePasswordMutation = useMutation({
     mutationFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/organization-admin/settings/password",
+        "https://office-management-backend-production.up.railway.app/api/organization-admin/settings/password",
         {
           method: "PATCH",
           credentials: "include",

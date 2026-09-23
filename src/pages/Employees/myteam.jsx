@@ -32,7 +32,7 @@ function MyTeam() {
     queryKey: ["manager-dashboard"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/dashboard",
+        "https://office-management-backend-production.up.railway.app/api/managers/dashboard",
         {
           credentials: "include",
         }
@@ -60,7 +60,7 @@ function MyTeam() {
     queryKey: ["manager-team"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/employees/manager-team",
+        "https://office-management-backend-production.up.railway.app/api/employees/manager-team",
         {
           credentials: "include",
         }

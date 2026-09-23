@@ -30,7 +30,7 @@ import toast from "react-hot-toast";
 
 const getEmployees = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/employees",
+    "https://office-management-backend-production.up.railway.app/api/employees",
     {
       credentials: "include",
     }
@@ -49,7 +49,7 @@ const getEmployees = async () => {
 
 const getDepartments = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/departments",
+    "https://office-management-backend-production.up.railway.app/api/departments",
     {
       credentials: "include",
     }
@@ -68,7 +68,7 @@ const getDepartments = async () => {
 
 const createEmployee = async (formData) => {
   const response = await fetch(
-    "http://localhost:3000/api/employees",
+    "https://office-management-backend-production.up.railway.app/api/employees",
     {
       method: "POST",
       headers: {
@@ -92,7 +92,7 @@ const createEmployee = async (formData) => {
 
 const updateEmployee = async ({ id, formData }) => {
   const response = await fetch(
-    `http://localhost:3000/api/employees/${id}`,
+    `https://office-management-backend-production.up.railway.app/api/employees/${id}`,
     {
       method: "PATCH",
       headers: {
@@ -116,7 +116,7 @@ const updateEmployee = async ({ id, formData }) => {
 
 const deactivateEmployee = async (id) => {
   const response = await fetch(
-    `http://localhost:3000/api/employees/${id}/deactivate`,
+    `https://office-management-backend-production.up.railway.app/api/employees/${id}/deactivate`,
     {
       method: "PATCH",
       credentials: "include",

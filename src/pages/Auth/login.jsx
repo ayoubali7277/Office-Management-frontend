@@ -13,7 +13,7 @@ import {
 
 const loginUser = async(loginData) => {
   const response = await fetch(
-    "http://localhost:3000/api/auth/login",{
+    "https://office-management-backend-production.up.railway.app/api/auth/login",{
       method: "POST",
       headers: {
         "Content-Type" : "application/json",

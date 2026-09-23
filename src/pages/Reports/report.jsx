@@ -37,7 +37,7 @@ function Reports() {
     queryKey: ["admin-reports"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/reports/overview",
+        "https://office-management-backend-production.up.railway.app/api/reports/overview",
         {
           method: "GET",
           credentials: "include",

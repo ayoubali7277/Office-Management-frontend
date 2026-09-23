@@ -24,7 +24,7 @@ import toast from "react-hot-toast";
 
 const approveOrganization = async (organizationId) => {
   const response = await fetch(
-    `http://localhost:3000/api/super-admin/organizations/${organizationId}/approve`,
+    `https://office-management-backend-production.up.railway.app/api/super-admin/organizations/${organizationId}/approve`,
     {
       method: "PATCH",
       credentials: "include",
@@ -44,7 +44,7 @@ const approveOrganization = async (organizationId) => {
 
 const rejectOrganization = async (organizationId) => {
   const response = await fetch(
-    `http://localhost:3000/api/super-admin/organizations/${organizationId}/reject`,
+    `https://office-management-backend-production.up.railway.app/api/super-admin/organizations/${organizationId}/reject`,
     {
       method: "PATCH",
       credentials: "include",
@@ -64,7 +64,7 @@ const rejectOrganization = async (organizationId) => {
 
 const getPendingOrganizations = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/super-admin/organizations/pending",
+    "https://office-management-backend-production.up.railway.app/api/super-admin/organizations/pending",
     {
       method: "GET",
       credentials: "include",
@@ -84,7 +84,7 @@ const getPendingOrganizations = async () => {
 
 const logoutUser = async () => {
   const response = await fetch(
-    "http://localhost:3000/api/auth/logout",
+    "https://office-management-backend-production.up.railway.app/api/auth/logout",
     {
       method: "POST",
       credentials: "include",

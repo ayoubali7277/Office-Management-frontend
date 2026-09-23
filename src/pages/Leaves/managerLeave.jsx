@@ -41,7 +41,7 @@ function LeaveRequests() {
     queryKey: ["manager-dashboard"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/dashboard",
+        "https://office-management-backend-production.up.railway.app/api/managers/dashboard",
         {
           credentials: "include",
         }
@@ -67,7 +67,7 @@ function LeaveRequests() {
     queryKey: ["manager-leaves"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/leaves/manager",
+        "https://office-management-backend-production.up.railway.app/api/leaves/manager",
         {
           credentials: "include",
         }
@@ -92,7 +92,7 @@ function LeaveRequests() {
     queryKey: ["my-leaves"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/leaves/my",
+        "https://office-management-backend-production.up.railway.app/api/leaves/my",
         {
           credentials: "include",
         }
@@ -114,7 +114,7 @@ function LeaveRequests() {
   const approveMutation = useMutation({
     mutationFn: async (leaveId) => {
       const response = await fetch(
-        `http://localhost:3000/api/leaves/${leaveId}/approve`,
+        `https://office-management-backend-production.up.railway.app/api/leaves/${leaveId}/approve`,
         {
           method: "PATCH",
           credentials: "include",
@@ -152,7 +152,7 @@ function LeaveRequests() {
   const rejectMutation = useMutation({
     mutationFn: async (leaveId) => {
       const response = await fetch(
-        `http://localhost:3000/api/leaves/${leaveId}/reject`,
+        `https://office-management-backend-production.up.railway.app/api/leaves/${leaveId}/reject`,
         {
           method: "PATCH",
           credentials: "include",
@@ -190,7 +190,7 @@ function LeaveRequests() {
   const createLeaveMutation = useMutation({
     mutationFn: async (formData) => {
       const response = await fetch(
-        "http://localhost:3000/api/leaves",
+        "https://office-management-backend-production.up.railway.app/api/leaves",
         {
           method: "POST",
           credentials: "include",

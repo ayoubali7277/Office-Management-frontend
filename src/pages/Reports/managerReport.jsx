@@ -35,7 +35,7 @@ function ManagerReports() {
 
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/managers/dashboard",
+        "https://office-management-backend-production.up.railway.app/api/managers/dashboard",
         {
           method: "GET",
           credentials: "include",
@@ -68,7 +68,7 @@ function ManagerReports() {
 
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/managers/reports?type=ATTENDANCE&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
+        `https://office-management-backend-production.up.railway.app/api/managers/reports?type=ATTENDANCE&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
         {
           method: "GET",
           credentials: "include",
@@ -103,7 +103,7 @@ function ManagerReports() {
 
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/managers/reports?type=LEAVES&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
+        `https://office-management-backend-production.up.railway.app/api/managers/reports?type=LEAVES&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
         {
           method: "GET",
           credentials: "include",
@@ -136,7 +136,7 @@ function ManagerReports() {
 
     queryFn: async () => {
       const response = await fetch(
-        `http://localhost:3000/api/managers/reports?type=TASKS&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
+        `https://office-management-backend-production.up.railway.app/api/managers/reports?type=TASKS&fromDate=${filters.fromDate}&toDate=${filters.toDate}`,
         {
           method: "GET",
           credentials: "include",

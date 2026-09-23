@@ -33,7 +33,7 @@ function SuperAdminReports() {
 
   const fetchOrganizationReports = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/organizations/reports",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/organizations/reports",
       {
         method: "GET",
         credentials: "include",
@@ -70,7 +70,7 @@ function SuperAdminReports() {
 
   const deactivateOrganization = async (organizationId) => {
     const response = await fetch(
-      `http://localhost:3000/api/super-admin/organizations/${organizationId}/deactivate`,
+      `https://office-management-backend-production.up.railway.app/api/super-admin/organizations/${organizationId}/deactivate`,
       {
         method: "PATCH",
         credentials: "include",
@@ -106,7 +106,7 @@ function SuperAdminReports() {
 
   const activateOrganization = async (organizationId) => {
     const response = await fetch(
-      `http://localhost:3000/api/super-admin/organizations/${organizationId}/activate`,
+      `https://office-management-backend-production.up.railway.app/api/super-admin/organizations/${organizationId}/activate`,
       {
         method: "PATCH",
         credentials: "include",
@@ -142,7 +142,7 @@ function SuperAdminReports() {
 
   const logoutUser = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/auth/logout",
+      "https://office-management-backend-production.up.railway.app/api/auth/logout",
       {
         method: "POST",
         credentials: "include",

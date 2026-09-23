@@ -37,7 +37,7 @@ function Tasks() {
     queryKey: ["adminTasks"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/tasks/admin",
+        "https://office-management-backend-production.up.railway.app/api/tasks/admin",
         {
           method: "GET",
           credentials: "include",

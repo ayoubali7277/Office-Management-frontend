@@ -67,7 +67,7 @@ function EmployeeSettings() {
     queryKey: ["employeeSettingsProfile"],
     queryFn: async () => {
       const response = await fetch(
-        "http://localhost:3000/api/employees/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/employees/settings/profile",
         {
           method: "GET",
           credentials: "include",
@@ -93,7 +93,7 @@ function EmployeeSettings() {
   const updateProfileMutation = useMutation({
     mutationFn: async (profileData) => {
       const response = await fetch(
-        "http://localhost:3000/api/employees/settings/profile",
+        "https://office-management-backend-production.up.railway.app/api/employees/settings/profile",
         {
           method: "PATCH",
           credentials: "include",
@@ -129,7 +129,7 @@ function EmployeeSettings() {
   const updatePasswordMutation = useMutation({
     mutationFn: async (passwordData) => {
       const response = await fetch(
-        "http://localhost:3000/api/employees/settings/password",
+        "https://office-management-backend-production.up.railway.app/api/employees/settings/password",
         {
           method: "PATCH",
           credentials: "include",

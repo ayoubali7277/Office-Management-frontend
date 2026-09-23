@@ -22,7 +22,7 @@ function EmployeePayroll() {
 
   const fetchPayroll = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/payroll/employee",
+      "https://office-management-backend-production.up.railway.app/api/payroll/employee",
       {
         credentials: "include",
       }

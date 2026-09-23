@@ -90,7 +90,7 @@ function SuperAdminSettings() {
 
   const fetchSuperAdminProfile = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/dashboard",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/dashboard",
       {
         method: "GET",
         credentials: "include",
@@ -108,7 +108,7 @@ function SuperAdminSettings() {
 
   const fetchPlatformSettings = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/platform-settings",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/platform-settings",
       {
         method: "GET",
         credentials: "include",
@@ -128,7 +128,7 @@ function SuperAdminSettings() {
 
   const updatePlatformSettings = async (platformData) => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/update/platform-settings",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/update/platform-settings",
       {
         method: "PATCH",
         headers: {
@@ -152,7 +152,7 @@ function SuperAdminSettings() {
 
   const updateProfile = async (profileData) => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/profile",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/profile",
       {
         method: "PATCH",
         headers: {
@@ -174,7 +174,7 @@ function SuperAdminSettings() {
 
   const updatePassword = async (passwordData) => {
     const response = await fetch(
-      "http://localhost:3000/api/super-admin/change-password",
+      "https://office-management-backend-production.up.railway.app/api/super-admin/change-password",
       {
         method: "PATCH",
         headers: {
@@ -196,7 +196,7 @@ function SuperAdminSettings() {
 
   const logoutUser = async () => {
     const response = await fetch(
-      "http://localhost:3000/api/auth/logout",
+      "https://office-management-backend-production.up.railway.app/api/auth/logout",
       {
         method: "POST",
         credentials: "include",
